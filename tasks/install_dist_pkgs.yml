@@ -3,8 +3,9 @@
   yum:
     name: redhat-lsb-core
     state: present
+    lock_timeout: 180
   when: nrinfragent_os_name|lower == 'redhat'
-
+  
 - name: reread ansible_lsb facts
   setup:
     filter: ansible_lsb*
