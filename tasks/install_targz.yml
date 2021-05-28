@@ -34,7 +34,6 @@
     NRIA_MODE: "{{ nrinfragent_tarball_mode | default('') }}"
     NRIA_USER: "{{ nrinfragent_tarball_user | default('') }}"
     NRIA_CONFIG_FILE: "{{ nrinfragent_tarball_config_file | default('') }}"
-
     NRIA_PROXY: "{{ nrinfragent_config['proxy'] | default('') }}"
     NRIA_LICENSE_KEY: "{{ nrinfragent_config['license_key'] | default('') }}"
   become: true
