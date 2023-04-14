@@ -46,3 +46,4 @@
     line="{{ item.key }}: {{ item.value }}"'
   with_items: "{{ lookup('dict', nrinfragent_config) }}"
   notify: restart newrelic-infra
+  no_log: "{{ true if item.key == 'license_key' else false }}"
