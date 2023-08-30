@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+    name: ansible-newrelic-infra-agent
+    title: Ansible Role New Relic Infra Agent
+    description: Ansible role for installing New Relic Infrastructure agent
+    namespace: stone
+    tags:
+        - ansible
+        - iac-library
+        - observability
+    annotations:
+      legacy.stone.tech/owner-email: foundation.observability@stone.com.br
+spec:
+    type: library
+    lifecycle: production
+    owner: stone-payments/foundation-platform-observability
