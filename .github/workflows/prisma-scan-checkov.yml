@@ -1,0 +1,11 @@
+name: Prisma Cloud IAC Integration
+on:
+  pull_request:
+    branches:
+      - "main"
+jobs:
+  iac_workflow:
+    uses: stone-payments/cloudsec-workflows/.github/workflows/prisma-scan-checkov.yml@main
+    secrets: 
+      api-key: ${{secrets.BC_API_KEY}}
+      
